@@ -1,13 +1,14 @@
-Playwright UI Automation Framework (Python)
+Playwright UI Automation Framework
+
+A scalable UI test automation framework built with Playwright and Pytest, designed using modern automation architecture principles.
+
 Overview
 
-This project is a UI test automation framework built using Playwright and Pytest.
-
-It demonstrates a structured and scalable automation architecture including:
+This project demonstrates a production-style UI automation framework featuring:
 
 Page Object Model (POM)
 
-Config-driven test execution
+Config-driven execution
 
 Parallel test execution
 
@@ -19,7 +20,7 @@ Automatic screenshot capture on failure
 
 Git version control
 
-The goal of this project is to showcase real-world automation framework design principles.
+The framework is structured for maintainability, scalability, and real-world automation practices.
 
 Tech Stack
 
@@ -29,59 +30,53 @@ Playwright
 
 Pytest
 
+pytest-html
+
+pytest-xdist
+
 Git
-
-pytest-html (HTML reporting)
-
-Python logging module
-
-pytest-xdist (parallel execution)
 
 Project Structure
 qa_project_1/
 │
-├── tests/                  # Test cases
-├── pages/                  # Page Object Models
-├── utils/                  # Utilities (logger, config reader)
-├── config/                 # Environment configuration
-├── screenshots/            # Failure screenshots
-├── conftest.py             # Pytest fixtures and hooks
-├── pytest.ini              # Pytest configuration
-├── requirements.txt        # Project dependencies
-├── automation.log          # Generated log file
+├── tests/              # Test cases
+├── pages/              # Page Object Models
+├── utils/              # Utilities (logger, config)
+├── config/             # Environment configuration
+├── screenshots/        # Failure screenshots
+├── conftest.py         # Pytest fixtures & hooks
+├── pytest.ini          # Pytest configuration
+├── requirements.txt    # Dependencies
+├── automation.log      # Generated log file
 └── README.md
 Features
-Page Object Model (POM)
+Page Object Model
 
-Separates test logic from UI interaction logic for maintainability and scalability.
+Separates test logic from UI interaction logic to improve maintainability.
 
 Config-Driven Execution
 
-Environment values are stored in a configuration file to avoid hardcoding.
+Environment values are stored externally to avoid hardcoding.
 
-Parallel Test Execution
+Parallel Execution
 
-Tests can run in parallel using pytest-xdist.
+Supports parallel test runs using pytest-xdist.
 
 HTML Reporting
 
-Automatic generation of an HTML test report.
+Automatically generates an HTML test report.
 
-Logging System
+Logging
 
-Test execution details are saved in automation.log.
+Execution details are recorded in automation.log.
 
 Screenshot on Failure
 
-When a test fails, a screenshot is automatically saved in the screenshots/ folder.
+Automatically captures screenshots when tests fail.
 
-Git Version Control
-
-The project is tracked using Git with structured commits.
-
-Installation and Setup
+Installation
 1. Clone the Repository
-git clone <your-repo-url>
+git clone <repository-url>
 cd qa_project_1
 2. Create Virtual Environment
 python -m venv venv
@@ -98,27 +93,24 @@ Run all tests:
 
 pytest
 
-Run tests in parallel:
+Run in parallel:
 
 pytest -n 4
 
 Generate HTML report:
 
 pytest --html=report.html
-Screenshot Feature
+Reporting
 
-If a test fails, a screenshot is automatically saved inside the screenshots directory.
-The filename includes the test name and timestamp.
+After execution:
 
-Logging
+HTML report is generated in the project root.
 
-Execution logs are saved in:
+Logs are stored in automation.log.
 
-automation.log
+Failure screenshots are saved in the screenshots/ directory.
 
-This file records important runtime information for debugging.
-
-Future Improvements
+Future Enhancements
 
 Continuous Integration with GitHub Actions
 
@@ -128,28 +120,18 @@ API automation framework
 
 Cross-browser test matrix
 
-Advanced reporting (Allure)
+Advanced reporting integration
 
 Smoke and regression test tagging
 
-Purpose
+Purpose of This Project
 
-This project demonstrates:
+This framework was built to demonstrate:
 
-Automation framework design
+Automation architecture design
 
-Clean architecture principles
+Clean code organization
 
 Scalable test structure
 
-Professional QA engineering practices
-
-If you’d like, I can now help you:
-
-Make this README more advanced
-
-Add badges
-
-Add a CI pipeline
-
-Or begin Project 2 (API automation)
+Real-world QA engineering practices
