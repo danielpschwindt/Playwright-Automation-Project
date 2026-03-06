@@ -2,7 +2,8 @@
 
 ## Overview
 
-This project is an automated end-to-end testing framework built using Playwright.  
+This project is an automated end-to-end testing framework built using Playwright.
+
 It demonstrates UI automation, cross-browser testing, and structured test design.
 
 The goal of this project is to showcase modern QA automation skills and best practices.
@@ -11,6 +12,7 @@ The goal of this project is to showcase modern QA automation skills and best pra
 
 - Playwright
 - JavaScript / TypeScript
+- Python
 - Node.js
 - Git & GitHub
 - Visual Studio Code
