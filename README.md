@@ -1,137 +1,86 @@
-Playwright UI Automation Framework
+# Playwright Automation Project
 
-A scalable UI test automation framework built with Playwright and Pytest, designed using modern automation architecture principles.
+## Overview
 
-Overview
+This project is an automated end-to-end testing framework built using Playwright.  
+It demonstrates UI automation, cross-browser testing, and structured test design.
 
-This project demonstrates a production-style UI automation framework featuring:
+The goal of this project is to showcase modern QA automation skills and best practices.
 
-Page Object Model (POM)
+## Technologies Used
 
-Config-driven execution
+- Playwright
+- JavaScript / TypeScript
+- Node.js
+- Git & GitHub
+- Visual Studio Code
 
-Parallel test execution
+## Features
 
-HTML reporting
+- End-to-end UI testing
+- Cross-browser testing (Chromium, Firefox, WebKit)
+- Automated test execution
+- Organized test structure
+- Reusable components
+- Fast and reliable test runs
 
-Logging system
+## Project Structure
 
-Automatic screenshot capture on failure
+tests/              # Test files  
+playwright.config.* # Playwright configuration  
+package.json        # Dependencies and scripts  
 
-Git version control
+## Installation
 
-The framework is structured for maintainability, scalability, and real-world automation practices.
+1. Install dependencies:
 
-Tech Stack
+```
+npm install
+```
 
-Python
+2. Install Playwright browsers:
 
-Playwright
+```
+npx playwright install
+```
 
-Pytest
-
-pytest-html
-
-pytest-xdist
-
-Git
-
-Project Structure
-qa_project_1/
-│
-├── tests/              # Test cases
-├── pages/              # Page Object Models
-├── utils/              # Utilities (logger, config)
-├── config/             # Environment configuration
-├── screenshots/        # Failure screenshots
-├── conftest.py         # Pytest fixtures & hooks
-├── pytest.ini          # Pytest configuration
-├── requirements.txt    # Dependencies
-├── automation.log      # Generated log file
-└── README.md
-Features
-Page Object Model
-
-Separates test logic from UI interaction logic to improve maintainability.
-
-Config-Driven Execution
-
-Environment values are stored externally to avoid hardcoding.
-
-Parallel Execution
-
-Supports parallel test runs using pytest-xdist.
-
-HTML Reporting
-
-Automatically generates an HTML test report.
-
-Logging
-
-Execution details are recorded in automation.log.
-
-Screenshot on Failure
-
-Automatically captures screenshots when tests fail.
-
-Installation
-1. Clone the Repository
-git clone <repository-url>
-cd qa_project_1
-2. Create Virtual Environment
-python -m venv venv
-
-Activate (Windows):
-
-venv\Scripts\activate
-3. Install Dependencies
-pip install -r requirements.txt
-playwright install
-Running Tests
+## Running Tests
 
 Run all tests:
 
-pytest
+```
+npx playwright test
+```
 
-Run in parallel:
+Run tests in UI mode:
 
-pytest -n 4
+```
+npx playwright test --ui
+```
 
-Generate HTML report:
+View the test report:
 
-pytest --html=report.html
-Reporting
+```
+npx playwright show-report
+```
 
-After execution:
+## What This Project Demonstrates
 
-HTML report is generated in the project root.
+- Automated testing skills
+- QA engineering fundamentals
+- Cross-browser validation
+- Clean project structure
+- Version control with Git
 
-Logs are stored in automation.log.
+## Future Improvements
 
-Failure screenshots are saved in the screenshots/ directory.
+- Add CI/CD integration
+- Increase test coverage
+- Implement Page Object Model (POM)
+- Add API testing
+- Integrate with GitHub Actions
 
-Future Enhancements
+## Author
 
-Continuous Integration with GitHub Actions
-
-Docker containerization
-
-API automation framework
-
-Cross-browser test matrix
-
-Advanced reporting integration
-
-Smoke and regression test tagging
-
-Purpose of This Project
-
-This framework was built to demonstrate:
-
-Automation architecture design
-
-Clean code organization
-
-Scalable test structure
-
-Real-world QA engineering practices
+Daniel Schwindt  
+GitHub: (https://github.com/danielpschwindt)
